@@ -1,0 +1,51 @@
+/* Start Griting System */
+*{
+    @include prefiexer(box-sizing, border-box , webkit moz )
+}
+
+.containerss{
+    // width: 1200px;
+    margin: auto;
+    padding: 0 15px  0 15px;
+    position: relative;
+    @media #{$MinSmall} {
+        width: 750px;
+    }
+    @media #{$MinMedium} {
+        width: 970px;
+    }
+    @media #{$MinLarge} {
+        width: 1170px;
+    }
+}
+
+.clearfix{
+    clear: both;
+}
+
+.text-center-xs{
+    @media #{$MaxMobile} {
+        text-align: center;
+    }
+}
+/////////////////////////////////////////
+
+// Start Font Weight 
+.fw-300{
+    font-weight: 300;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
+///////////////////////////////////////////
+.po-ra-0{
+    border-radius: 0 !important;
+}
+// End Font Weight ////////////////////
+
+
+
+/* End Griting System */

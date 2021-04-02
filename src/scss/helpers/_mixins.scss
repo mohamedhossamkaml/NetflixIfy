@@ -1,0 +1,71 @@
+/*
+** Midia Query Mixing For Help Only
+** Demo Version Only By Jared
+*/
+@mixin minMedium {
+    @media #{$mainMaxSmall} {
+        @content;
+    }
+}
+@mixin minSmall {
+    @media #{$mainMidiumSmall}  {
+        @content;    
+    }
+}
+@mixin maxMobile {
+    @media #{$mainMaxMobile} {
+        @content;    
+    }
+}
+@mixin maxMidium {
+    @media #{$mainMaxMidium}
+    {
+        @content;    
+    }
+}
+
+/*
+** Overlay Mixing For Helping
+** Demo Version Only By Jared
+*/
+
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+** Prefixes Mixing For Helping
+** Auto Add Prefixes To Properties
+** Demo Version Only By Jared
+*/
+
+@mixin prefiexer($propperty, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-'+ $prefix + '-' + $propperty}: $value ;
+    }
+    #{$propperty}: $value;
+}
+
+
+/*
+** Animation Mixing For Helping
+** Auto Add Prefixes To Animation
+** Demo Version Only By Jared
+*/
+
+@mixin keyFrame($animation-name ){
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-name}{
+        @content;
+    }
+    @keyframes #{$animation-name}{
+        @content;
+    }
+}

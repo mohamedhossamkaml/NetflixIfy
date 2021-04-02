@@ -1,0 +1,11 @@
+npm install --global gulp-cli
+
+
+
+npx mkdirp my-project
+cd my-project
+npm init
+npm install --save-dev gulp
+npm install gulp-autoprefixer browser-sync gulp-sass gulp-sourcemaps gulp-rename gulp-concat gulp-imagemin --save-dev
+
+npm install gulp-sourcemaps gulp-rename gulp-sass gulp-concat gulp-uglify gulp-autoprefixer gulp-watch gulp-image gulp-imagemin gulp-replace gulp-sourcemaps gulp-browsersync-inject browser-sync --save-dev
