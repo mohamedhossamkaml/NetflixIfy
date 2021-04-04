@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,406 @@
     <title>Netflixify</title>
     <!-- font awesume style -->
     <link rel="stylesheet" href="dist/css/fontawesome.min.css">
-    <link rel="stylesheet" href="dist/css/solid.min.css">
+    <!-- <link rel="stylesheet"  href="dist/css/all.min.css"> -->
+    <!-- <link rel="stylesheet"  href="dist/css/font-awesome.min.css"> -->
     <!-- bootstrap Style -->
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <!-- vendor style -->
-    <link rel="stylesheet" href="dist/js/vendor/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/vendor/vendor.min.css">
     <!-- Main Style  -->
     <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
+
 <body>
 
-    
+    <section id="banner">
+        <!-- <div class="banner__bg"></div> -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold text-grey-man" href="index.html">Netflix<span
+                        class="text-red-man font-weight-bolder">ify</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- <ul class="navbar-nav mr-auto"></ul> -->
+                    <form action="" method="get" class=" col-12 col-md-12 col-lg-6 p-0">
+                        <div class="input-group">
+                            <input type="search" class="form-control bg-transparent border-0"
+                                placeholder="Search for your Favorite Movies"
+                                aria-label="Search for your Favorite Movies" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent text-grey-man border-0"
+                                    id="basic-addon2"><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                    </form><!-- End Form -->
+                    <ul class="navbar-nav ml-auto">
+                        <a href="/pages/login.html"
+                            class=" btn btn-grey-man mb-2 mb-md-2 mb-lg-0 mr-0 mr-md-0 mr-lg-2 ">Login</a>
+                        <a href="/pages/register.html" class=" btn btn-outline-light ">Register</a>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!-- End Of Navbar -->
+
+        <!-- start movies -->
+        <div class="movies owl-carousel owl-theme">
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+                <!--Start Movie-->
+                <div class="movie__bg"
+                    style="background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6) ), url('dist/images/birdbox.jpg') center/cover no-repeat;">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- start movie info -->
+                        <div class="col-md-6  movie__info">
+                            <div class="d-flex justify-content-between">
+                                <!-- start Movie Name -->
+                                <h1 class="movie__name text-red-man  fw-400">Bird Box</h1>
+                                <!-- start Movie year -->
+                                <span class="mpvie__year align-self-center">2019</span>
+                            </div>
+                            <!-- start Movie Rating -->
+                            <div class="d-flex movie__rating my-1">
+                                <div class="d-flex align-self-center">
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                </div>
+                                <span class="align-self-center">4.7</span>
+                            </div>
+                            <!--end of movie reating-->
+                            <!-- start movei description -->
+                            <p class="movie__desc my-2">
+                                lorm ipsum dolor sit amet, Consectetur Adipisicion Elit. Aliquam distinctio doloremqe
+                                eum excepturi exercitaionem fugit inventore labore laborisam magni, minus molestias
+                                neque non omnis qui quia soluta temporibus ut vero.
+                            </p>
+                            <!--End Of movei description-->
+                            <div class="movie__cta my-4 text-capitalize">
+                                <a href="" class="btn btn-grey-man mr-0 mr-md-2 mr-lg-2"><span
+                                        class="fas fa-play"></span> Watch Now</a>
+                                <a href="" class="btn btn-outline-light "><span class="fas fa-heart"></span> Add to
+                                    Favorite </a>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                        <!-- start Imag -->
+                        <div class="col-6 mt-2 mx-auto col-md-5 col-lg-3    ml-md-auto mr-md-0">
+                            <img src="dist/images/birdbox.jpg" alt="birdbox" class="img-fluid">
+                        </div>
+                        <!--end of col Imag-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of cont ainer-->
+
+            </div> <!-- End of Movie -->
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+                <!--Start Movie-->
+                <div class="movie__bg"
+                    style="background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6) ), url('dist/images/vivirsin_permiso.jpg') center/cover no-repeat;">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- start movie info -->
+                        <div class="col-md-6  movie__info">
+                            <div class="d-flex justify-content-between">
+                                <!-- start Movie Name -->
+                                <h1 class="movie__name text-red-man  fw-400">Vivirsin Permiso</h1>
+                                <!-- start Movie year -->
+                                <span class="mpvie__year align-self-center">2010</span>
+                            </div>
+                            <!-- start Movie Rating -->
+                            <div class="d-flex movie__rating my-1">
+                                <div class="d-flex align-self-center">
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                </div>
+                                <span class="align-self-center">4.7</span>
+                            </div>
+                            <!--end of movie reating-->
+                            <!-- start movei description -->
+                            <p class="movie__desc my-2">
+                                lorm ipsum dolor sit amet, Consectetur Adipisicion Elit. Aliquam distinctio doloremqe
+                                eum excepturi exercitaionem fugit inventore labore laborisam magni, minus molestias
+                                neque non omnis qui quia soluta temporibus ut vero.
+                            </p>
+                            <!--End Of movei description-->
+                            <div class="movie__cta my-4 text-capitalize">
+                                <a href="" class="btn btn-grey-man mr-0 mr-md-2 mr-lg-2"><span
+                                        class="fas fa-play"></span> Watch Now</a>
+                                <a href="" class="btn btn-outline-light "><span class="fas fa-heart"></span> Add to
+                                    Favorite </a>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                        <!-- start Imag -->vivirsin_permiso
+                        <div class="col-6 mt-2 mx-auto col-md-5 col-lg-3    ml-md-auto mr-md-0">
+                            <img src="dist/images/vivirsin_permiso.jpg" alt="vivirsin permiso" class="img-fluid">
+                        </div>
+                        <!--end of col Imag-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of cont ainer-->
+
+            </div> <!-- End of Movie -->
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+                <!--Start Movie-->
+                <div class="movie__bg"
+                    style="background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6) ), url('dist/images/black_mass.jpg') center/cover no-repeat;">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- start movie info -->
+                        <div class="col-md-6  movie__info">
+                            <div class="d-flex justify-content-between">
+                                <!-- start Movie Name -->
+                                <h1 class="movie__name text-red-man  fw-400">Black Mass</h1>
+                                <!-- start Movie year -->
+                                <span class="mpvie__year align-self-center">2020</span>
+                            </div>
+                            <!-- start Movie Rating -->
+                            <div class="d-flex movie__rating my-1">
+                                <div class="d-flex align-self-center">
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                </div>
+                                <span class="align-self-center">4.3</span>
+                            </div>
+                            <!--end of movie reating-->
+                            <!-- start movei description -->
+                            <p class="movie__desc my-2">
+                                lorm ipsum dolor sit amet, Consectetur Adipisicion Elit. Aliquam distinctio doloremqe
+                                eum excepturi exercitaionem fugit inventore labore laborisam magni, minus molestias
+                                neque non omnis qui quia soluta temporibus ut vero.
+                            </p>
+                            <!--End Of movei description-->
+                            <div class="movie__cta my-4 text-capitalize">
+                                <a href="" class="btn btn-grey-man mr-0 mr-md-2 mr-lg-2"><span
+                                        class="fas fa-play"></span> Watch Now</a>
+                                <a href="" class="btn btn-outline-light "><span class="fas fa-heart"></span> Add to
+                                    Favorite </a>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                        <!-- start Imag -->vivirsin_permiso
+                        <div class="col-6 mt-2 mx-auto col-md-5 col-lg-3    ml-md-auto mr-md-0">
+                            <img src="dist/images/black_mass.jpg" alt="black mass" class="img-fluid">
+                        </div>
+                        <!--end of col Imag-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of cont ainer-->
+
+            </div> <!-- End of Movie -->
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+                <!--Start Movie-->
+                <div class="movie__bg"
+                    style="background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6) ), url('dist/images/mandalorian.jpg') center/cover no-repeat;">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- start movie info -->
+                        <div class="col-md-6  movie__info">
+                            <div class="d-flex justify-content-between">
+                                <!-- start Movie Name -->
+                                <h1 class="movie__name text-red-man  fw-400">Mandalorian</h1>
+                                <!-- start Movie year -->
+                                <span class="mpvie__year align-self-center">2021</span>
+                            </div>
+                            <!-- start Movie Rating -->
+                            <div class="d-flex movie__rating my-1">
+                                <div class="d-flex align-self-center">
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                </div>
+                                <span class="align-self-center">3.3</span>
+                            </div>
+                            <!--end of movie reating-->
+                            <!-- start movei description -->
+                            <p class="movie__desc my-2">
+                                lorm ipsum dolor sit amet, Consectetur Adipisicion Elit. Aliquam distinctio doloremqe
+                                eum excepturi exercitaionem fugit inventore labore laborisam magni, minus molestias
+                                neque non omnis qui quia soluta temporibus ut vero.
+                            </p>
+                            <!--End Of movei description-->
+                            <div class="movie__cta my-4 text-capitalize">
+                                <a href="" class="btn btn-grey-man mr-0 mr-md-2 mr-lg-2"><span
+                                        class="fas fa-play"></span> Watch Now</a>
+                                <a href="" class="btn btn-outline-light "><span class="fas fa-heart"></span> Add to
+                                    Favorite </a>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                        <!-- start Imag -->vivirsin_permiso
+                        <div class="col-6 mt-2 mx-auto col-md-5 col-lg-3    ml-md-auto mr-md-0">
+                            <img src="dist/images/mandalorian.jpg" alt="mandalorian" class="img-fluid">
+                        </div>
+                        <!--end of col Imag-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of cont ainer-->
+
+            </div> <!-- End of Movie -->
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+                <!--Start Movie-->
+                <div class="movie__bg"
+                    style="background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6) ), url('dist/images/devils_advocate.jpg') center/cover no-repeat;">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- start movie info -->
+                        <div class="col-md-6  movie__info">
+                            <div class="d-flex justify-content-between">
+                                <!-- start Movie Name -->
+                                <h1 class="movie__name text-red-man  fw-400">Devils Advocate</h1>
+                                <!-- start Movie year -->
+                                <span class="mpvie__year align-self-center">2021</span>
+                            </div>
+                            <!-- start Movie Rating -->
+                            <div class="d-flex movie__rating my-1">
+                                <div class="d-flex align-self-center">
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                    <span class="fas fa-star text-primary mr-2"></span>
+                                </div>
+                                <span class="align-self-center">3.5</span>
+                            </div>
+                            <!--end of movie reating-->
+                            <!-- start movei description -->
+                            <p class="movie__desc my-2">
+                                lorm ipsum dolor sit amet, Consectetur Adipisicion Elit. Aliquam distinctio doloremqe
+                                eum excepturi exercitaionem fugit inventore labore laborisam magni, minus molestias
+                                neque non omnis qui quia soluta temporibus ut vero.
+                            </p>
+                            <!--End Of movei description-->
+                            <div class="movie__cta my-4 text-capitalize">
+                                <a href="" class="btn btn-grey-man mr-0 mr-md-2 mr-lg-2"><span
+                                        class="fas fa-play"></span> Watch Now</a>
+                                <a href="" class="btn btn-outline-light "><span class="fas fa-heart"></span> Add to
+                                    Favorite </a>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                        <!-- start Imag -->vivirsin_permiso
+                        <div class="col-6 mt-2 mx-auto col-md-5 col-lg-3    ml-md-auto mr-md-0">
+                            <img src="dist/images/devils_advocate.jpg" alt="devils advocate" class="img-fluid">
+                        </div>
+                        <!--end of col Imag-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of cont ainer-->
+
+            </div> <!-- End of Movie -->
+        </div><!-- End of Movies -->
+    </section><!-- End Of Banner SECTION -->
+
+    <section id="listing" class="by-5">
+        <div class="container">
+            <div class="row justify-content-between my-4 text-capitalize">
+                <h3 class="listing__title text-red-man fw-300">Drama</h3>
+                <a href="#" class="see__all align-self-center text-grey-man">see all</a>
+            </div>
+            <!--end row-->
+            <div class="row movies owl-carousel owl-theme">
+                <!-- start movie -->
+                <div class="movie p-0">
+                    <img src="dist/images/dont_breathe2.jpg" class="img-fluid" alt="">
+                    <!-- start movie datails -->
+                    <div class="movie__details text-white text-capitalize">
+                        <!-- start movie info -->
+                        <div class="movie__info d-flex justify-content-between my-1">
+                            <p class="mb-0 movie__name">Movie name</p>
+                            <p class="mb-0 movie__date align-self-center">2019</p>
+                        </div>
+                        <!--end of movie info-->
+                        <!-- start movie rating -->
+                        <div class="d-flex movie__rating">
+                            <div class="mr-3">
+                                <i class="fas fa-star text-primary mr-1"></i>
+                                <i class="fas fa-star text-primary mr-1"></i>
+                                <i class="fas fa-star text-primary mr-1"></i>
+                                <i class="fas fa-star text-primary mr-1"></i>
+                            </div>
+                            <span>4.7</span>
+                        </div>
+                        <!--end of movie rating -->
+                        <!-- start movie views -->
+                        <div class="movie__views ">
+                            <p>views: 300</p>
+                        </div>
+                        <!--end of movie views-->
+                        <!-- start movie cta -->
+                        <div class="movie__cta d-flex justify-content-between">
+                            <a href="" class="btn btn-grey-man flex-fill mr-4"><i class="fa fa-play"></i> watch new</a>
+                            <i class="movie__fav-button fas fa-heart align-self-center"></i>
+                        </div>
+                    </div>
+                    <!--end og movie tedlis-->
+                </div><!-- end of movie-->
+                <!-- start movie -->
+                <div class="movie p-0">
+                    <img src="dist/images/dont_breathe2.jpg" class="img-fluid" alt="">
+                    <!-- start movie datails -->
+                    <div class="movie__details text-white text-capitalize">
+                        <!-- start movie info -->
+                        <div class="movie__info d-flex justify-content-between my-1">
+                            <p class="mb-0 movie__name">Movie name</p>
+                            <p class="mb-0 movie__date align-self-center">2019</p>
+                        </div>
+                        <!--end of movie info-->
+                        <!-- start movie rating -->
+                        <div class="d-flex movie__rating">
+                            <div class="mr-3">
+                                <i class="fas fa-star text-primary mr-1"></i>
+                                <i class="fas fa-star text-primary mr-1"></i>
+                                <i class="fas fa-star text-primary mr-1"></i>
+                                <i class="fas fa-star text-primary mr-1"></i>
+                            </div>
+                            <span>4.7</span>
+                        </div>
+                        <!--end of movie rating -->
+                        <!-- start movie views -->
+                        <div class="movie__views ">
+                            <p>views: 300</p>
+                        </div>
+                        <!--end of movie views-->
+                        <!-- start movie cta -->
+                        <div class="movie__cta d-flex justify-content-between">
+                            <a href="" class="btn btn-grey-man flex-fill mr-4"><i class="fa fa-play"></i> watch new</a>
+                            <i class="movie__fav-button fas fa-heart align-self-center"></i>
+                        </div>
+                    </div>
+                    <!--end og movie tedlis-->
+                </div><!-- end of movie-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <!--End of Listing SECTION-->
 
 
 
@@ -28,6 +417,7 @@
     <!-- fontawesome Script -->
     <script src="dist/js/solid.min.js"></script>
     <script src="dist/js/fontawesome.min.js"></script>
+    <script src="dist/js/all.min.js"></script>
     <!-- bootstrap -->
     <script src="dist/js/bootstrap.bundle.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
@@ -35,5 +425,48 @@
     <script src="dist/js/vendor/vendor.min.js"></script>
     <!-- mian scripts -->
     <script src="dist/js/main.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#banner .movies").owlCarousel({
+                loop: true,
+                nav: false,
+                items: 1,
+                dots: false,
+            });
+            $("#listing .movies").owlCarousel({
+                loop: true,
+                center: true,
+                nav: true,
+                dots: false,
+                margin: 15,
+                responsiveClass:true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    480: {
+                        items: 2,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    720: {
+                        items: 3,
+                    },
+                    900: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 4,
+                    },
+                    1020: {
+                        items: 5,
+                    },
+
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

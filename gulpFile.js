@@ -38,7 +38,7 @@ async function bootstrap_styles() {
 
 // Start Styles Function
 async function vendor_styles() {
-    return gulp.src('src/paugins/**/*.css')
+    return gulp.src('src/plugins/**/*.css')
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write())
     .pipe(concat('vendor.min.css'))
@@ -70,7 +70,7 @@ async function compress_images() {
         imagemin.gifsicle({ interlaced: true }),
         // imagemin.jpegtran({ progressive: true }), // old
         imagemin.mozjpeg({ progressive: true }), // new
-        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.optipng({ optimizationLevel: 10 }),
         imagemin.svgo({
             plugins:[
                 { removeViewBox: true },

@@ -3,6 +3,10 @@
     @include prefiexer(box-sizing, border-box , webkit moz )
 }
 
+body{
+    background: $black;
+}
+
 .containerss{
     // width: 1200px;
     margin: auto;
@@ -45,6 +49,9 @@
     border-radius: 0 !important;
 }
 // End Font Weight ////////////////////
+
+
+
 
 
 
